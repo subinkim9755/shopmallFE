@@ -25,7 +25,7 @@ const Header = () => {
                     <TextyButton text="SIGN IN" onClick={() => router.push("/signin")} /> 
                     <TextyButton text="SIGN UP" onClick={() => router.push("/signup")} /> 
                     <TextyButton text="CART" cartCount={cartCount} onClick={() => console.log("Header Button Clicked")} /> 
-                    <TextyButton text="SEARCH" onClick={() => console.log("Header Button Clicked")} /> 
+                    <TextyButton text="MY" onClick={() => console.log("Header Button Clicked")} /> 
                 </div>
 
             </div>
