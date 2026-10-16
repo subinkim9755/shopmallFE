@@ -12,20 +12,19 @@ const Header = () => {
 
     return (
         <div className="w-full h-16 flex items-center justify-center">
-            <div className="w-full max-w-[1200px] px-4 flex items-center justify-between">
-                <div className="flex space-x-3">
+            <div className="w-full max-w-[1200px] px-4 grid grid-cols-[1fr_auto_1fr] items-center">
+                <div className="flex space-x-3 justify-self-start">
                     <TextyButton text="SHOP" onClick={() => console.log("Header Button Clicked")} /> 
                     <TextyButton text="BRAND" onClick={() => router.push("/brand")} /> 
                     <TextyButton text="COLLECTION" onClick={() => router.push("/collection")} /> 
                 </div>
-                <div>
+                <div className="justify-self-center">
                     <ImageButton  str="My Shop Mall" />
                 </div>
-                <div className="flex space-x-3">
+                <div className="flex space-x-3 justify-self-end">
                     <TextyButton text="SIGN IN" onClick={() => router.push("/signin")} /> 
-                    <TextyButton text="SIGN UP" onClick={() => router.push("/signup")} /> 
-                    <TextyButton text="CART" cartCount={cartCount} onClick={() => console.log("Header Button Clicked")} /> 
-                    <TextyButton text="MY" onClick={() => console.log("Header Button Clicked")} /> 
+                    <TextyButton text="SIGN UP" onClick={() => router.push("/signup")} />                     
+                    <TextyButton text="MY" onClick={() => router.push("/my")}/> 
                 </div>
 
             </div>
