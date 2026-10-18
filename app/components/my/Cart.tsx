@@ -11,11 +11,11 @@ const Cart = () => {
             <span className="text-2xl font-bold">
                 SHOPPING BAG
             </span>
-             <span className="w-full text-lg font-medium border-b border-gray-700">
+             <span className="w-full text-lg font-medium border-b-2 border-gray-700">
                     Your cart is currently empty.
             </span>
 
-            <div className="w-full h-[700px] flex flex-col items-center justify-center gap-4">
+            <div className="w-full h-[700px] flex flex-col items-center justify-center gap-4 border-b-2  border-gray-700">
                
               <CartList />
               <CartList />
@@ -24,8 +24,10 @@ const Cart = () => {
 
             </div>
 
-            <TextyButton text="BACK TO HOME" onClick={() => router.push("/")} /> 
 
+            <div className="w-full pb-10 flex justify-center">
+                <TextyButton text="BACK TO HOME" onClick={() => router.push("/")} /> 
+            </div>
             
         </div>
     );
